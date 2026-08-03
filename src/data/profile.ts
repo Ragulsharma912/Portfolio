@@ -15,7 +15,7 @@ export const profile = {
   location: 'Hosur, Tamil Nadu, India',
   email: 'ragulsharma912@gmail.com',
   phone: '+91 63824 61650',
-  linkedin: 'https://linkedin.com/in/ragulsharma',
+  linkedin: 'https://www.linkedin.com/in/ragulsharmam/',
   github: 'https://github.com/ragulsharma',
   resumeUrl: 'https://ragulsharma912.github.io/Portfolio/resume/Ragul_Sharma_M_Resume.pdf',
   photo: 'https://ragulsharma912.github.io/Portfolio/images/profile.jpg',

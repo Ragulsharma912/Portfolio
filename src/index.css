@@ -18,6 +18,7 @@ body {
   color: #ffffff;
   font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Custom scrollbar */
@@ -117,4 +118,114 @@ body {
   .mask-fade-b {
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   }
+}
+
+/* ------------------------------------------------------------------
+   Light theme overrides
+   ThemeContext toggles a `.light` class on <html>. Dark theme values
+   defined above remain the default; these rules override them when
+   light mode is active. Selectors target the same utility/component
+   class names used throughout the app so no component markup needs
+   to change.
+------------------------------------------------------------------- */
+.light {
+  color-scheme: light;
+}
+
+.light body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.light .bg-base {
+  background-color: #f8fafc;
+}
+
+.light .bg-base-light {
+  background-color: #eef2f7;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.light ::selection {
+  background: rgba(37, 99, 235, 0.15);
+  color: #0f172a;
+}
+
+.light .glass,
+.light .glass-card,
+.light .glass-nav {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+.light .glass-card:hover {
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(37, 99, 235, 0.12);
+}
+
+.light .chip {
+  border-color: rgba(15, 23, 42, 0.1);
+  background-color: rgba(15, 23, 42, 0.04);
+  color: #334155;
+}
+
+.light .btn-outline {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(15, 23, 42, 0.14);
+  color: #0f172a;
+}
+
+.light .btn-outline:hover {
+  border-color: rgba(37, 99, 235, 0.5);
+  color: #1d4ed8;
+}
+
+.light .section-subtitle {
+  color: #475569;
+}
+
+.light .bg-blueprint {
+  background-image:
+    linear-gradient(rgba(37, 99, 235, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.1) 1px, transparent 1px);
+}
+
+.light .text-white {
+  color: #0f172a;
+}
+
+.light .text-gray-200,
+.light .text-gray-300 {
+  color: #334155;
+}
+
+.light .text-gray-400 {
+  color: #475569;
+}
+
+.light .text-gray-500 {
+  color: #64748b;
+}
+
+.light .placeholder-gray-500::placeholder {
+  color: #94a3b8;
+}
+
+.light .bg-white\/5 {
+  background-color: rgba(15, 23, 42, 0.04);
+}
+
+.light .bg-white\/10 {
+  background-color: rgba(15, 23, 42, 0.06);
+}
+
+.light .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+.light .border-white\/20 {
+  border-color: rgba(15, 23, 42, 0.16);
 }

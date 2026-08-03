@@ -47,18 +47,21 @@ export default function Footer() {
           <div>
             <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">Connect</h4>
             <div className="flex gap-3">
-              {socials.map(({ icon: SocialIcon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 transition-all hover:-translate-y-1 hover:border-secondary/50 hover:text-secondary"
-                >
-                  <SocialIcon size={18} />
-                </a>
-              ))}
+              {socials.map(({ icon: SocialIcon, href, label }) => {
+                const isExternal = href.startsWith('http');
+                return (
+                  <a
+                    key={label}
+                    href={href}
+                    target={isExternal ? '_blank' : undefined}
+                    rel={isExternal ? 'noopener noreferrer' : undefined}
+                    aria-label={label}
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 transition-all hover:-translate-y-1 hover:border-secondary/50 hover:text-secondary"
+                  >
+                    <SocialIcon size={18} />
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
