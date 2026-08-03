@@ -17,8 +17,8 @@ export const profile = {
   phone: '+91 63824 61650',
   linkedin: 'https://linkedin.com/in/ragulsharma',
   github: 'https://github.com/ragulsharma',
-  resumeUrl: '/resume/Ragul_Sharma_M_Resume.pdf',
-  photo: '/images/profile.jpg',
+  resumeUrl: 'https://ragulsharma912.github.io/Portfolio/resume/Ragul_Sharma_M_Resume.pdf',
+  photo: 'https://ragulsharma912.github.io/Portfolio/images/profile.jpg',
   currentRole: 'Senior Officer',
   currentCompany: 'Uno Minda Limited',
 };
